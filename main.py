@@ -30,3 +30,13 @@ print(test1==test2) # en revanche les valeurs sont les mêmes
 
 test1=test2
 print(test1 is test2) # Ici, test1 et test2 ne font qu'un
+
+a=10
+print (f'today we had {a} degrees') # Pour appeler la valeur dans print (ne pas oublier le f)
+
+def textanalyzer (text):
+    count=0
+    for x in text.split(' '):
+        count+=1
+    return count
+textanalyzer('this is a perfect fifth') # Fonction pour retourner le nombre de mots dans un texte
