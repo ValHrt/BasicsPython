@@ -40,3 +40,10 @@ def textanalyzer (text):
         count+=1
     return count
 textanalyzer('this is a perfect fifth') # Fonction pour retourner le nombre de mots dans un texte
+
+import functools
+my_list = [1, 2, 3, 4, 5]
+def add_it(x,y):
+    return(x+y)
+sum = functools.reduce(add_it, my_list) # créer une fonction pour additionner les valeurs d'une liste
+print(sum)
